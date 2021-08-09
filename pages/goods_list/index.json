@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "searchInput":"../../components/searchInput/searchInput",
+    "tabs":"../../components/Tabs/tabs"
+  },
+  "navigationBarTitleText": "BeKeer-商品列表" ,
+  "enablePullDownRefresh":true,
+  "backgroundTextStyle":"dark"
+}

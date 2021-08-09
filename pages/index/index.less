@@ -1,0 +1,53 @@
+.index_swiper {
+  swiper {
+    width: 750rpx;
+    height: 340rpx;
+    image {
+      width: 100%;
+    }
+  }
+}
+.index_cate {
+  display: flex;
+  navigator {
+    padding: 20rpx 30rpx;
+    flex: 1;
+    image {
+      width: 100%;
+    }
+  }
+}
+.index_floor {
+  .floor_group {
+    .floor_title {
+      image {
+        width: 100%;
+        padding-top: 10rpx;
+      }
+    }
+    .floor_list {
+      navigator {
+        float: left;
+        width: 33.33%;
+        // 后四个超链接的高应该是第一个的一半
+        &:nth-last-child(-n + 4) {
+          border-left: 10rpx solid #fff;
+          // 这里计算要加上括号，不然无法实现计算
+          height: (33.33vw * 386/232/2);
+          image {
+            //  如果将上述的计算放置再image中，会导致
+            //  图片高度是一半，但是有了padding就会超出图1的高度
+          }
+        }
+        &:nth-child(2),
+        &:nth-child(3) {
+          padding-bottom: 10rpx;
+        }
+        image {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

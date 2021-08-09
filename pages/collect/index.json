@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "tabs":"../../components/Tabs/tabs"
+  },
+  "navigationBarTitleText": "BeKeer-收藏详情", 
+  "enablePullDownRefresh":true,
+  "backgroundTextStyle":"dark"
+}

@@ -1,0 +1,53 @@
+.collect_choose {
+  display: flex;
+  height: 80rpx;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  .collect_choose_item {
+    border: 1rpx solid #666;
+    border-radius: 10%;
+    margin: 10rpx;
+    padding: 10rpx;
+    justify-content: center;
+    align-self: center;
+  }
+  .active {
+    color: var(--themeColor);
+    border: 1rpx solid currentColor;
+  }
+}
+.collect_content {
+  .goods_item {
+    display: flex;
+    border-bottom: 2rpx solid rgb(206, 206, 203);
+    .goods_img_wrap {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      image {
+        width: 70%;
+      }
+    }
+    .goods_info_wrap {
+      flex: 2;
+      display: flex;
+      //   这是改变盒子的主轴方向 列向
+      flex-direction: column;
+      //  给一个空白环绕
+      justify-content: space-around;
+
+      .goods_name {
+        display: -webkit-box;
+        overflow: hidden;
+        // 以下两行是解决字符串放不下就再第几行出现...
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+      .goods_price {
+        color: var(--themeColor);
+        font-size: 32rpx;
+      }
+    }
+  }
+}

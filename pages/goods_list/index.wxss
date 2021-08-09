@@ -1,0 +1,38 @@
+.first_tab {
+  background-color: #dedede;
+  float: left;
+  padding: 2vw;
+}
+.first_tab .goods_item {
+  float: left;
+  width: 47vw;
+  border: 2rpx solid #cececb;
+  border-radius: 10rpx;
+  background-color: #fff;
+  margin-right: 1vw;
+  align-self: auto;
+}
+.first_tab .goods_item .goods_img_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.first_tab .goods_item .goods_img_wrap image {
+  padding: 10rpx;
+}
+.first_tab .goods_item .goods_info_wrap {
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10rpx;
+}
+.first_tab .goods_item .goods_info_wrap .goods_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.first_tab .goods_item .goods_info_wrap .goods_price {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}

@@ -1,0 +1,29 @@
+<view class="BeKeer-goods_list">
+  <!-- 搜索框开始 -->
+  <searchInput></searchInput>
+  <!-- 搜索框结束 -->
+  <!-- 商品列表 -->
+  <!-- 监听自定义事件 -->
+  <tabs tabs="{{tabs}}" bindtabItemChange="handleTabItemChange">
+    <block wx:if="{{tabs[0].isActive}}">
+      <view class="first_tab" hover-class="none" hover-stop-propagation="false">
+        <navigator
+          class="goods_item"
+          wx:for="{{goodsList}}"
+          wx:key="goods_id"
+          url="/pages/goods_detail/index?goods_id={{item.goods_id}}"
+        >
+          <!-- 左侧图片 -->
+          <view class="goods_img_wrap">
+            <image src="{{item.goods_small_logo?item.goods_small_logo:falseUrl}}" mode="widthFix" />
+          </view>
+          <!-- 右侧 商品详情 -->
+          <view class="goods_info_wrap">
+            <view class="goods_name">{{item.goods_name}}</view>
+            <view class="goods_price">￥{{item.goods_price}}</view>
+          </view>
+        </navigator>
+      </view>
+    </block>
+  </tabs>
+</view>

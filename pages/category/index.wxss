@@ -1,0 +1,57 @@
+page {
+  height: 100%;
+}
+.BeKeer-catas_index {
+  height: 100%;
+}
+.BeKeer-catas_index .cates_container {
+  height: calc(100vh - 90rpx);
+  display: flex;
+}
+.BeKeer-catas_index .cates_container .left_menu {
+  flex: 2;
+  padding-top: 20rpx;
+}
+.BeKeer-catas_index .cates_container .left_menu .menu_item {
+  display: flex;
+  height: 80rpx;
+  justify-content: center;
+  text-align: center;
+  font-size: 30rpx;
+  color: #7e7e7e;
+}
+.BeKeer-catas_index .cates_container .left_menu .active {
+  color: var(--themeColor);
+  border-left: 5rpx sold currentColor;
+}
+.BeKeer-catas_index .cates_container .right_menu {
+  flex: 5;
+}
+.BeKeer-catas_index .cates_container .right_menu .goods_group .goods_title {
+  display: flex;
+  height: 80rpx;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+.BeKeer-catas_index .cates_container .right_menu .goods_group .goods_title .delimiter {
+  color: #aaaaaa;
+}
+.BeKeer-catas_index .cates_container .right_menu .goods_group .goods_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.BeKeer-catas_index .cates_container .right_menu .goods_group .goods_list navigator {
+  padding: 10rpx;
+  width: 33.33%;
+  justify-content: center;
+  text-align: center;
+}
+.BeKeer-catas_index .cates_container .right_menu .goods_group .goods_list navigator image {
+  width: 50%;
+  height: 100%;
+}
+.BeKeer-catas_index .cates_container .right_menu .goods_group .goods_list navigator .good_name {
+  font-size: 20rpx;
+  color: #7e7e7e;
+}

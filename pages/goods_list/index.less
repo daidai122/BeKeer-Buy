@@ -1,0 +1,43 @@
+.BeKeer-goods_list {
+}
+.first_tab {
+  background-color: #dedede;
+  float: left;
+  padding: 2vw;
+  .goods_item {
+    float: left;
+    width: 47vw;
+    border: 2rpx solid rgb(206, 206, 203);
+    border-radius: 10rpx;
+    background-color: #fff;
+    margin-right: 1vw;
+    align-self: auto;
+    .goods_img_wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      image {
+        padding: 10rpx;
+      }
+    }
+    .goods_info_wrap {
+      //   这是改变盒子的主轴方向 列向
+      flex-direction: column;
+      //  给一个空白环绕
+      justify-content: space-around;
+      padding: 10rpx;
+      .goods_name {
+        display: -webkit-box;
+        overflow: hidden;
+        // 以下两行是解决字符串放不下就再第几行出现...
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+      .goods_price {
+        color: var(--themeColor);
+        font-size: 32rpx;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.order_content .order_item {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+  color: #6b6b6b;
+}
+.order_content .order_item .order_num_row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx;
+}
+.order_content .order_item .order_num_row .order_num_text {
+  flex: 1;
+}
+.order_content .order_item .order_num_row .order_num_value {
+  flex: 3;
+  text-align: right;
+}
+.order_content .order_item .order_price_row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx;
+}
+.order_content .order_item .order_price_row .order_price_text {
+  flex: 1;
+}
+.order_content .order_item .order_price_row .order_price_value {
+  flex: 3;
+  color: var(--themeColor);
+  font-size: 32rpx;
+  font-weight: 700;
+  text-align: right;
+}
+.order_content .order_item .order_time_row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx;
+}
+.order_content .order_item .order_time_row .order_time_text {
+  flex: 1;
+}
+.order_content .order_item .order_time_row .order_time_value {
+  flex: 3;
+  text-align: right;
+}

@@ -1,0 +1,60 @@
+page {
+  height: 100%;
+}
+.BeKeer-catas_index {
+  height: 100%;
+  .cates_container {
+    height: calc(100vh - 90rpx);
+    display: flex;
+    .left_menu {
+      flex: 2;
+      padding-top: 20rpx;
+      .menu_item {
+        display: flex;
+        height: 80rpx;
+        justify-content: center;
+        text-align: center;
+        font-size: 30rpx;
+        color: rgb(126, 126, 126);
+      }
+      .active {
+        color: var(--themeColor);
+        border-left: 5rpx sold currentColor;
+      }
+    }
+
+    .right_menu {
+      flex: 5;
+      .goods_group {
+        .goods_title {
+          display: flex;
+          height: 80rpx;
+          justify-content: center;
+          align-items: center;
+          font-size: 30rpx;
+          .delimiter {
+            color: rgb(170, 170, 170);
+          }
+        }
+        .goods_list {
+          display: flex;
+          flex-wrap: wrap;
+          navigator {
+            padding: 10rpx;
+            width: 33.33%;
+            justify-content: center;
+            text-align: center;
+            image {
+              width: 50%;
+              height: 100%;
+            }
+            .good_name {
+              font-size: 20rpx;
+              color: rgb(126, 126, 126);
+            }
+          }
+        }
+      }
+    }
+  }
+}

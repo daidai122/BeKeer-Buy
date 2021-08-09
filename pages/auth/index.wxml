@@ -1,0 +1,7 @@
+<button
+  class="pay_token"
+  open-type="getUserInfo"
+  bindgetuserinfo="handleGetUserInfo"
+  type="primary"
+  plain="{{true}}"
+>授权</button>
